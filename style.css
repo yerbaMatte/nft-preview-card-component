@@ -1,0 +1,104 @@
+:root {
+  --Soft-blue: hsl(215, 51%, 70%);
+  --Cyan: hsl(178, 100%, 50%);
+  --Very3-dark-blue: hsl(217, 54%, 11%);
+  --Very2-dark-blue: hsl(216, 50%, 16%);
+  --Very1-dark-blue: hsl(215, 32%, 27%);
+  --White: hsl(0, 0%, 100%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  background-color: var(--Very3-dark-blue);
+  color: var(--White);
+  line-height: 1.4;
+}
+
+footer {
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.2rem;
+}
+
+span:not(.author > span) {
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.card {
+  background-color: var(--Very1-dark-blue);
+  max-width: 32rem;
+  padding: 1.8rem;
+  border-radius: 2.5rem;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 95vh;
+}
+
+.card-img {
+  width: 100%;
+  border-radius: 2.5rem;
+}
+
+.description {
+  font-size: 1.8rem;
+  color: var(--Soft-blue);
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem 0 2rem 0;
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  padding-bottom: 1.8rem;
+  border-bottom: 0.1rem solid var(--Soft-blue);
+}
+
+.details > :first-child {
+  color: var(--Cyan);
+  font-weight: 700;
+}
+
+.details > :nth-child(2) {
+  color: var(--Soft-blue);
+  font-weight: 700;
+}
+
+.author {
+  font-size: 1.4rem;
+  align-items: center;
+  display: flex;
+  gap: 1.2rem;
+  margin-top: -0.5rem;
+}
+
+.avatar {
+  width: 3.2rem;
+}
+/* - Font size (paragraph): 18px */
+/* - Weights: 300, 400, 600 */
+/* - Family: [Outfit](https://fonts.google.com/specimen/Outfit) */
