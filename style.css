@@ -40,7 +40,11 @@ span:not(.author > span) {
 }
 
 .card {
-  background-color: var(--Very1-dark-blue);
+   background: linear-gradient(
+    to top right,
+    var(--Very1-dark-blue),
+    var(--Very3-dark-blue)
+  );
   max-width: 32rem;
   padding: 1.8rem;
   border-radius: 2.5rem;
